@@ -23,7 +23,8 @@ select count(*) from hr.employees where commission_pct is not null;
 select first_name ,substr(concat(manager_id, department_id),-5) from hr.employees;  
 select * from hr.employees order by hire_date desc;  
 select ltrim(postal_code,0) from hr.locations; 
- select 
+ 
+select 
     *
  from hr.jobs 
  where 

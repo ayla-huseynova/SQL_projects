@@ -22,4 +22,101 @@ select count(*) from hr.employees where commission_pct is null;
 select count(*) from hr.employees where commission_pct is not null;  
 select first_name ,substr(concat(manager_id, department_id),-5) from hr.employees;  
 select * from hr.employees order by hire_date desc;  
-select ltrim(postal_code,0) from hr.locations;  
+select ltrim(postal_code,0) from hr.locations; 
+ select 
+    *
+ from hr.jobs 
+ where 
+    job_title like 'Purchasing%';  
+
+select 
+    *
+ from hr.jobs 
+ where 
+    job_title like 'Purchasing%' 
+    or 
+    job_title like 'Sales%';  
+
+select 
+    *
+ from hr.jobs 
+ where 
+    job_title like '%Manager%';  
+ 
+select 
+    *
+ from hr.jobs 
+ where 
+    job_title like '%Manager%'
+    OR
+    job_title like '%President%';  
+
+select
+    *
+from hr.LOCATIONS
+where
+    postal_code like '____';  
+
+select
+    *
+from hr.LOCATIONS
+where
+    postal_code like '% %'
+    or
+    postal_code like '%-%';  
+
+select
+    *
+from hr.jobs
+where
+    min_salary>3000
+    AND
+    max_salary>6000;  
+
+select
+    *
+from hr.jobs
+where
+    min_salary>3000
+    AND
+    max_salary>6000;
+    Or
+    job_title like '%Manager%';  
+
+select
+    *
+from hr.employees
+where
+    job_id='ST_MAN'
+    OR
+    job_id='AD_VP'
+    OR
+    job_id='IT_PROG';  
+
+select
+    *
+from hr.employees
+where
+    job_id!='ST_MAN'
+    OR
+    job_id!='AD_VP'
+    OR
+    job_id!='IT_PROG';  
+
+select
+    *
+from hr.employees
+where
+    department_id=100
+    or
+    department_id<>90;  
+
+select
+    *
+from hr.employees
+where
+    department_id=100
+    or
+    department_id=90
+    and
+    salary between 5000 and 15000;  

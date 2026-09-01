@@ -25,9 +25,9 @@ select * from hr.employees order by hire_date desc;
 select ltrim(postal_code,0) from hr.locations; 
  
 select *
- from hr.jobs 
- where 
-    job_title like 'Purchasing%';  
+from hr.jobs 
+where 
+   job_title like 'Purchasing%';  
 
 select *
  from hr.jobs 

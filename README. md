@@ -30,23 +30,23 @@ where
    job_title like 'Purchasing%';  
 
 select *
- from hr.jobs 
- where 
-    job_title like 'Purchasing%' 
-    or 
-    job_title like 'Sales%';  
+from hr.jobs 
+where 
+   job_title like 'Purchasing%' 
+   or 
+   job_title like 'Sales%';  
 
 select  *
- from hr.jobs 
- where 
-    job_title like '%Manager%';  
+from hr.jobs 
+where 
+   job_title like '%Manager%';  
  
 select  *
- from hr.jobs 
- where 
-    job_title like '%Manager%'
-    OR
-    job_title like '%President%';  
+from hr.jobs 
+where 
+   job_title like '%Manager%'
+   OR
+   job_title like '%President%';  
 
 select *
 from hr.LOCATIONS
